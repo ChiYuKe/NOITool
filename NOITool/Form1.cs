@@ -16,7 +16,7 @@ namespace NOITool
         }
         public static class FilePathManager
         {
-            public static string FolderPath { get; set; }
+            public static string? FolderPath { get; set; }
         }
 
         private void 生成_Click(object sender, EventArgs e)
@@ -130,10 +130,15 @@ namespace NOITool
         }
 
         //退出按键
-        private void 他ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsm_退出_Click_1(object sender, EventArgs e)
         {
             Close();
             Logger.Log("点击了“退出”，程序结束运行");
+        }
+
+        private void bT_高级_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -58,20 +58,21 @@
             this.nB_装饰半径 = new System.Windows.Forms.NumericUpDown();
             this.rB_模板 = new System.Windows.Forms.RichTextBox();
             this.cB_yaml文件 = new System.Windows.Forms.CheckBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mS_菜单栏 = new System.Windows.Forms.MenuStrip();
             this.菜单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.他ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_退出 = new System.Windows.Forms.ToolStripMenuItem();
             this.label13 = new System.Windows.Forms.Label();
+            this.bT_高级 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰度)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰半径)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.mS_菜单栏.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(4, 65);
+            this.label1.Location = new System.Drawing.Point(0, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 0;
@@ -372,31 +373,31 @@
             this.cB_yaml文件.UseVisualStyleBackColor = true;
             this.cB_yaml文件.CheckedChanged += new System.EventHandler(this.cB_yaml文件_CheckedChanged);
             // 
-            // menuStrip1
+            // mS_菜单栏
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mS_菜单栏.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mS_菜单栏.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.菜单ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(802, 28);
-            this.menuStrip1.TabIndex = 28;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mS_菜单栏.Location = new System.Drawing.Point(0, 0);
+            this.mS_菜单栏.Name = "mS_菜单栏";
+            this.mS_菜单栏.Size = new System.Drawing.Size(802, 28);
+            this.mS_菜单栏.TabIndex = 28;
+            this.mS_菜单栏.Text = "menuStrip1";
             // 
             // 菜单ToolStripMenuItem
             // 
             this.菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.他ToolStripMenuItem});
+            this.tsm_退出});
             this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
             this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.菜单ToolStripMenuItem.Text = "菜单";
             // 
-            // 他ToolStripMenuItem
+            // tsm_退出
             // 
-            this.他ToolStripMenuItem.Name = "他ToolStripMenuItem";
-            this.他ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.他ToolStripMenuItem.Text = "退出";
-            this.他ToolStripMenuItem.Click += new System.EventHandler(this.他ToolStripMenuItem_Click);
+            this.tsm_退出.Name = "tsm_退出";
+            this.tsm_退出.Size = new System.Drawing.Size(122, 26);
+            this.tsm_退出.Text = "退出";
+            this.tsm_退出.Click += new System.EventHandler(this.tsm_退出_Click_1);
             // 
             // label13
             // 
@@ -407,12 +408,23 @@
             this.label13.TabIndex = 29;
             this.label13.Text = "组件：";
             // 
+            // bT_高级
+            // 
+            this.bT_高级.Location = new System.Drawing.Point(264, 258);
+            this.bT_高级.Name = "bT_高级";
+            this.bT_高级.Size = new System.Drawing.Size(94, 29);
+            this.bT_高级.TabIndex = 30;
+            this.bT_高级.Text = "高级";
+            this.bT_高级.UseVisualStyleBackColor = true;
+            this.bT_高级.Click += new System.EventHandler(this.bT_高级_Click);
+            // 
             // NOITool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(802, 574);
+            this.Controls.Add(this.bT_高级);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.cB_yaml文件);
             this.Controls.Add(this.rB_模板);
@@ -441,17 +453,17 @@
             this.Controls.Add(this.生成);
             this.Controls.Add(this.tB1_建筑ID);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.mS_菜单栏);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.mS_菜单栏;
             this.Name = "NOITool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NOITool";
             this.Load += new System.EventHandler(this.NOITool_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰度)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰半径)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mS_菜单栏.ResumeLayout(false);
+            this.mS_菜单栏.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,9 +499,10 @@
         private NumericUpDown nB_装饰半径;
         private RichTextBox rB_模板;
         private CheckBox cB_yaml文件;
-        private MenuStrip menuStrip1;
+        private MenuStrip mS_菜单栏;
         private ToolStripMenuItem 菜单ToolStripMenuItem;
-        private ToolStripMenuItem 他ToolStripMenuItem;
+        private ToolStripMenuItem tsm_退出;
         private Label label13;
+        private Button bT_高级;
     }
 }
