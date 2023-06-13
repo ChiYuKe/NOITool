@@ -9,7 +9,7 @@ namespace NOITool
         }
 
         private void NOITool_Load(object sender, EventArgs e)
-        {
+        {   //设置下拉框的默认值
             cB1_建筑材料.SelectedIndex = 0;
             cB3_建筑质量.SelectedIndex = 4;
             cB2_建造位置规则.SelectedIndex = 1;
@@ -48,6 +48,7 @@ namespace NOITool
             }
             else
             {
+                //直接使用ID作为文件夹名字
                 string relativeFolderPath = $" {userInput}";
                 // 获取当前工作目录
                 string currentDirectory = Directory.GetCurrentDirectory();
@@ -56,11 +57,9 @@ namespace NOITool
                 FilePathManager.FolderPath = folderPath;
                 // 创建文件夹
                 Directory.CreateDirectory(folderPath);
-                Logger.Log("[info]文件夹成功创建");
+                Logger.Log("文件夹成功创建");
 
-
-
-                // 定义导出文件的路径和文件名
+                //在程序运行目录创建cs文件
                 string exportFilePath = $"{folderPath}\\{userInput}.cs";
                 // 将模板导出到文件
                 using (StreamWriter writer = new StreamWriter(exportFilePath))
@@ -68,17 +67,15 @@ namespace NOITool
                     string Btemplate = BasicTemplate.Obtain_Template(userInput, widthInput, heightInput, animInput, hitpointsInput, construction_timeInput, construction_massInput, construction_materialsInput, melting_pointInput, build_location_ruleInput, tier2_amountInput, tier2_radiusInput, muban);
                     writer.Write(Btemplate);
                 }
-
-
-                // 定义导出文件的路径和文件名
+                //在程序运行目录创建csproj文件
                 string exportFilePath2 = $"{folderPath}\\{userInput}.csproj";
-                // 将模板导出到文件
                 using (StreamWriter writer = new StreamWriter(exportFilePath2))
                 {
                     writer.Write(BasicTemplate.Obtain_DLL);
                 }
                 Console.WriteLine("模板文件已经成功生成");
                 MessageBox.Show("模板生成成功！");
+                //点击“生成”按钮时，调用它
                 cB_yaml文件_CheckedChanged(sender, e);
                 
             }
@@ -87,7 +84,8 @@ namespace NOITool
         private void cB_yaml文件_CheckedChanged(object sender, EventArgs e)
         {
             bool yamlOut = cB_yaml文件.Checked;
-            bool isButtonClicked = Button_Clicked; // 假设按钮点击状态保存在名为 buttonClicked 的变量中
+            //获得点击“生成”按钮时的bool值
+            bool isButtonClicked = Button_Clicked; 
 
             if (yamlOut)
             {
@@ -100,10 +98,11 @@ namespace NOITool
 
             if (yamlOut && isButtonClicked)
             {
+                //在程序运行目录新建文件夹
                 string currentDirectory = Directory.GetCurrentDirectory();
                 string folderPath = Path.Combine(currentDirectory, "yourMod");
                 Directory.CreateDirectory(folderPath);
-
+                //新建文件并把模板填充到mod文件内
                 string exportFilePath_modyml = Path.Combine(folderPath, "mod.yaml");
                 using (StreamWriter writer = new StreamWriter(exportFilePath_modyml))
                 {
@@ -111,7 +110,7 @@ namespace NOITool
                 }
                 Console.WriteLine("modyml模板文件已经成功生成");
                 Logger.Log("mod.yaml文件生成成功");
-
+                //新建文件并把模板填充到mod_info文件内
                 string exportFilePath_mod_infoyml = Path.Combine(folderPath, "mod_info.yaml");
                 using (StreamWriter writer = new StreamWriter(exportFilePath_mod_infoyml))
                 {
@@ -130,5 +129,11 @@ namespace NOITool
             }
         }
 
+        //退出按键
+        private void 他ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+            Logger.Log("点击了“退出”，程序结束运行");
+        }
     }
 }

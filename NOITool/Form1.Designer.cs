@@ -58,24 +58,29 @@
             this.nB_装饰半径 = new System.Windows.Forms.NumericUpDown();
             this.rB_模板 = new System.Windows.Forms.RichTextBox();
             this.cB_yaml文件 = new System.Windows.Forms.CheckBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.菜单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.他ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰度)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰半径)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(4, 58);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(4, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 15);
+            this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "建筑ID：";
             this.tTip1.SetToolTip(this.label1, "1.ID是唯一的，不要与游戏内ID发生冲突\r\n2.ID请使用英文，并且ID首字母大写");
             // 
             // tB1_建筑ID
             // 
-            this.tB1_建筑ID.Location = new System.Drawing.Point(68, 52);
+            this.tB1_建筑ID.Location = new System.Drawing.Point(68, 61);
             this.tB1_建筑ID.Name = "tB1_建筑ID";
             this.tB1_建筑ID.Size = new System.Drawing.Size(182, 27);
             this.tB1_建筑ID.TabIndex = 1;
@@ -94,7 +99,7 @@
             // 
             // tB4_贴图名称
             // 
-            this.tB4_贴图名称.Location = new System.Drawing.Point(102, 151);
+            this.tB4_贴图名称.Location = new System.Drawing.Point(102, 160);
             this.tB4_贴图名称.Name = "tB4_贴图名称";
             this.tB4_贴图名称.Size = new System.Drawing.Size(148, 27);
             this.tB4_贴图名称.TabIndex = 8;
@@ -105,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(4, 157);
+            this.label4.Location = new System.Drawing.Point(4, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 15);
             this.label4.TabIndex = 7;
@@ -114,7 +119,7 @@
             // 
             // tB5_建筑血量
             // 
-            this.tB5_建筑血量.Location = new System.Drawing.Point(102, 184);
+            this.tB5_建筑血量.Location = new System.Drawing.Point(102, 193);
             this.tB5_建筑血量.Name = "tB5_建筑血量";
             this.tB5_建筑血量.Size = new System.Drawing.Size(148, 27);
             this.tB5_建筑血量.TabIndex = 10;
@@ -123,7 +128,7 @@
             // 
             this.生成.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.生成.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.生成.Location = new System.Drawing.Point(4, 434);
+            this.生成.Location = new System.Drawing.Point(4, 443);
             this.生成.Name = "生成";
             this.生成.Size = new System.Drawing.Size(246, 127);
             this.生成.TabIndex = 2;
@@ -133,7 +138,7 @@
             // 
             // tB2_建筑宽度
             // 
-            this.tB2_建筑宽度.Location = new System.Drawing.Point(102, 85);
+            this.tB2_建筑宽度.Location = new System.Drawing.Point(102, 94);
             this.tB2_建筑宽度.Name = "tB2_建筑宽度";
             this.tB2_建筑宽度.Size = new System.Drawing.Size(148, 27);
             this.tB2_建筑宽度.TabIndex = 3;
@@ -141,10 +146,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(4, 91);
+            this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(0, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 15);
+            this.label2.Size = new System.Drawing.Size(87, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "建筑宽度：";
             // 
@@ -152,7 +157,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(4, 124);
+            this.label3.Location = new System.Drawing.Point(4, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 15);
             this.label3.TabIndex = 5;
@@ -160,7 +165,7 @@
             // 
             // tB3_建筑高度
             // 
-            this.tB3_建筑高度.Location = new System.Drawing.Point(102, 118);
+            this.tB3_建筑高度.Location = new System.Drawing.Point(102, 127);
             this.tB3_建筑高度.Name = "tB3_建筑高度";
             this.tB3_建筑高度.Size = new System.Drawing.Size(148, 27);
             this.tB3_建筑高度.TabIndex = 6;
@@ -169,7 +174,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(4, 256);
+            this.label6.Location = new System.Drawing.Point(4, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 15);
             this.label6.TabIndex = 13;
@@ -179,7 +184,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(4, 223);
+            this.label7.Location = new System.Drawing.Point(4, 232);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 15);
             this.label7.TabIndex = 12;
@@ -187,7 +192,7 @@
             // 
             // tB6_建造时间
             // 
-            this.tB6_建造时间.Location = new System.Drawing.Point(128, 217);
+            this.tB6_建造时间.Location = new System.Drawing.Point(128, 226);
             this.tB6_建造时间.Name = "tB6_建造时间";
             this.tB6_建造时间.Size = new System.Drawing.Size(122, 27);
             this.tB6_建造时间.TabIndex = 11;
@@ -196,7 +201,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(4, 190);
+            this.label8.Location = new System.Drawing.Point(4, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 15);
             this.label8.TabIndex = 9;
@@ -224,7 +229,7 @@
             "任意可建造的",
             "飞行生物食物",
             "辐射防护"});
-            this.cB1_建筑材料.Location = new System.Drawing.Point(99, 283);
+            this.cB1_建筑材料.Location = new System.Drawing.Point(99, 292);
             this.cB1_建筑材料.Name = "cB1_建筑材料";
             this.cB1_建筑材料.Size = new System.Drawing.Size(151, 28);
             this.cB1_建筑材料.TabIndex = 15;
@@ -233,7 +238,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(4, 289);
+            this.label5.Location = new System.Drawing.Point(4, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 15);
             this.label5.TabIndex = 16;
@@ -243,7 +248,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(4, 327);
+            this.label9.Location = new System.Drawing.Point(4, 336);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 15);
             this.label9.TabIndex = 17;
@@ -253,7 +258,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(4, 360);
+            this.label10.Location = new System.Drawing.Point(4, 369);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(126, 15);
             this.label10.TabIndex = 18;
@@ -261,7 +266,7 @@
             // 
             // tB8_建筑熔点
             // 
-            this.tB8_建筑熔点.Location = new System.Drawing.Point(102, 321);
+            this.tB8_建筑熔点.Location = new System.Drawing.Point(102, 330);
             this.tB8_建筑熔点.Name = "tB8_建筑熔点";
             this.tB8_建筑熔点.Size = new System.Drawing.Size(148, 27);
             this.tB8_建筑熔点.TabIndex = 19;
@@ -290,7 +295,7 @@
             "在火箭外壳上",
             "墙壁与地板",
             "原点无液体导管"});
-            this.cB2_建造位置规则.Location = new System.Drawing.Point(128, 354);
+            this.cB2_建造位置规则.Location = new System.Drawing.Point(128, 363);
             this.cB2_建造位置规则.Name = "cB2_建造位置规则";
             this.cB2_建造位置规则.Size = new System.Drawing.Size(122, 28);
             this.cB2_建造位置规则.TabIndex = 20;
@@ -309,7 +314,7 @@
             "800f",
             "1200f",
             "2000f"});
-            this.cB3_建筑质量.Location = new System.Drawing.Point(99, 250);
+            this.cB3_建筑质量.Location = new System.Drawing.Point(99, 259);
             this.cB3_建筑质量.Name = "cB3_建筑质量";
             this.cB3_建筑质量.Size = new System.Drawing.Size(151, 28);
             this.cB3_建筑质量.TabIndex = 21;
@@ -318,7 +323,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(4, 397);
+            this.label11.Location = new System.Drawing.Point(4, 406);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 15);
             this.label11.TabIndex = 22;
@@ -328,7 +333,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(119, 397);
+            this.label12.Location = new System.Drawing.Point(119, 406);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(92, 15);
             this.label12.TabIndex = 23;
@@ -336,21 +341,21 @@
             // 
             // nB_装饰度
             // 
-            this.nB_装饰度.Location = new System.Drawing.Point(68, 392);
+            this.nB_装饰度.Location = new System.Drawing.Point(68, 401);
             this.nB_装饰度.Name = "nB_装饰度";
             this.nB_装饰度.Size = new System.Drawing.Size(45, 27);
             this.nB_装饰度.TabIndex = 24;
             // 
             // nB_装饰半径
             // 
-            this.nB_装饰半径.Location = new System.Drawing.Point(206, 392);
+            this.nB_装饰半径.Location = new System.Drawing.Point(206, 401);
             this.nB_装饰半径.Name = "nB_装饰半径";
             this.nB_装饰半径.Size = new System.Drawing.Size(44, 27);
             this.nB_装饰半径.TabIndex = 25;
             // 
             // rB_模板
             // 
-            this.rB_模板.Location = new System.Drawing.Point(264, 52);
+            this.rB_模板.Location = new System.Drawing.Point(264, 88);
             this.rB_模板.Name = "rB_模板";
             this.rB_模板.Size = new System.Drawing.Size(526, 159);
             this.rB_模板.TabIndex = 26;
@@ -359,7 +364,7 @@
             // cB_yaml文件
             // 
             this.cB_yaml文件.AutoSize = true;
-            this.cB_yaml文件.Location = new System.Drawing.Point(4, 22);
+            this.cB_yaml文件.Location = new System.Drawing.Point(4, 31);
             this.cB_yaml文件.Name = "cB_yaml文件";
             this.cB_yaml文件.Size = new System.Drawing.Size(155, 24);
             this.cB_yaml文件.TabIndex = 27;
@@ -367,12 +372,48 @@
             this.cB_yaml文件.UseVisualStyleBackColor = true;
             this.cB_yaml文件.CheckedChanged += new System.EventHandler(this.cB_yaml文件_CheckedChanged);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.菜单ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(802, 28);
+            this.menuStrip1.TabIndex = 28;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 菜单ToolStripMenuItem
+            // 
+            this.菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.他ToolStripMenuItem});
+            this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
+            this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.菜单ToolStripMenuItem.Text = "菜单";
+            // 
+            // 他ToolStripMenuItem
+            // 
+            this.他ToolStripMenuItem.Name = "他ToolStripMenuItem";
+            this.他ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.他ToolStripMenuItem.Text = "退出";
+            this.他ToolStripMenuItem.Click += new System.EventHandler(this.他ToolStripMenuItem_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(264, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(54, 20);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "组件：";
+            // 
             // NOITool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(802, 564);
+            this.ClientSize = new System.Drawing.Size(802, 574);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.cB_yaml文件);
             this.Controls.Add(this.rB_模板);
             this.Controls.Add(this.nB_装饰半径);
@@ -400,13 +441,17 @@
             this.Controls.Add(this.生成);
             this.Controls.Add(this.tB1_建筑ID);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "NOITool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NOITool";
             this.Load += new System.EventHandler(this.NOITool_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰度)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nB_装饰半径)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,5 +487,9 @@
         private NumericUpDown nB_装饰半径;
         private RichTextBox rB_模板;
         private CheckBox cB_yaml文件;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem 菜单ToolStripMenuItem;
+        private ToolStripMenuItem 他ToolStripMenuItem;
+        private Label label13;
     }
 }
