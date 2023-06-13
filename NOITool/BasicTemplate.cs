@@ -39,7 +39,7 @@ namespace NOITool
 </Project>
             ";
 
-        public static string Obtain_modyml = $@"title: ""Template"" 
+        public static string Obtain_modyml = $@"title: ""YourModName"" 
 ";
 
         public static string Obtain_mod_infoyml = $@"supportedContent: ALL
