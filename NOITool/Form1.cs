@@ -16,7 +16,7 @@ namespace NOITool
         }
         public static class FilePathManager
         {
-            public static string? FolderPath { get; set; }
+            public static string? FolderPath_Get { get; set; }
         }
 
         private void 生成_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace NOITool
                 string currentDirectory = Directory.GetCurrentDirectory();
                 // 拼接相对路径和当前工作目录，得到完整路径
                 string folderPath = Path.Combine(currentDirectory, relativeFolderPath);
-                FilePathManager.FolderPath = folderPath;
+                FilePathManager.FolderPath_Get = folderPath;
                 // 创建文件夹
                 Directory.CreateDirectory(folderPath);
                 Logger.Log("文件夹成功创建");
